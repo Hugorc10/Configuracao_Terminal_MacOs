@@ -25,4 +25,14 @@ O Dracula está disponível para muitos terminais e você pode conferir todos aq
 
 Se você estiver no Mac usando o Terminal padrão, provavelmente irá usar: https://draculatheme.com/terminal/
 
-Se você estiver no Linux com uma distribuição que usa Gnome, vai utilizar: https://github.com/dracula/gnome-terminal
+## Tema Spaceship
+
+Agora vamos instalar o tema Spaceship que vai modificar um pouco as informações que são exibidas no terminal, com ele podemos mostrar a versão do Node atual, do Docker, etc.
+
+## Instalando FiraCode
+
+Antes de iniciar a configuração do Spaceship precisamos instalar a fonte Fira Code que possui diversos ícones dos quais são utilizados nesse tema. Baixe o zip da última versão da fonte disponível aqui: https://github.com/tonsky/FiraCode
+
+Descompacte o arquivo baixado e na pasta TTF copie os arquivos de fonte para as fontes do seu sistema (cada sistema operacional possui uma forma de fazer isso).
+
+Depois disso será necessário configurar seu terminal com essa fonte, abaixo mostro uma imagem de como configurei no Mac:
