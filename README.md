@@ -12,6 +12,8 @@ E receber algo como: zsh x.x (x86_64-apple-darwin20.0)
 
 ## Instalando Oh My Zsh
 
+Site do Oh My Zsh: https://ohmyz.sh/#install
+
 Para instalar o Oh My Zsh você precisa executar o comando abaixo (você deve ter o cURL instalado para executa-lo):
 
 ```
