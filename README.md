@@ -32,6 +32,8 @@ Se você estiver no Mac usando o Terminal padrão, provavelmente irá usar: http
 
 Agora vamos instalar o tema Spaceship que vai modificar um pouco as informações que são exibidas no terminal, com ele podemos mostrar a versão do Node atual, do Docker, etc.
 
+https://github.com/spaceship-prompt/spaceship-prompt
+
 ## Instalando FiraCode
 
 Antes de iniciar a configuração do Spaceship precisamos instalar a fonte Fira Code que possui diversos ícones dos quais são utilizados nesse tema. Baixe o zip da última versão da fonte disponível aqui: https://github.com/tonsky/FiraCode
