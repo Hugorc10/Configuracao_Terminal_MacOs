@@ -9,7 +9,7 @@ Com o Zsh instalado deve ser possível você executar:
 ```
 zsh --version
 ```
-E receber algo como: zsh x.x (x86_64-apple-darwin18.0)
+E receber algo como: zsh x.x (x86_64-apple-darwin20.0)
 
 ## Instalando Oh My Zsh
 
