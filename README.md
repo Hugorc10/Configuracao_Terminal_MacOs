@@ -3,16 +3,17 @@ Terminal com Oh My Zsh, Spaceship, Dracula e mais
 
 ## Instalando Zsh
 
-Antes de conseguirmos iniciar com qualquer configuração precisamos instalar o Zsh. Como existem várias formas de instalação dependendo do sistema operacional que você está, leia esse guia: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
+Antes de conseguirmos iniciar com qualquer configuração precisamos instalar o Zsh. Como existem várias formas de instalação dependendo do sistema operacional que você está, leia esse guia: <i>https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH</i>
 
 Com o Zsh instalado deve ser possível você executar:
-
+```
 zsh --version
-E receber algo como: zsh x.x (x86_64-apple-darwin20.0)
+```
+E receber algo como: zsh x.x (x86_64-apple-darwin18.0)
 
 ## Instalando Oh My Zsh
 
-Site do Oh My Zsh: https://ohmyz.sh/#install
+Site do Oh My Zsh: <i>https://ohmyz.sh/#install</i>
 
 Para instalar o Oh My Zsh você precisa executar o comando abaixo (você deve ter o cURL instalado para executa-lo):
 
@@ -30,16 +31,31 @@ O Dracula está disponível para muitos terminais e você pode conferir todos aq
 
 Se você estiver no Mac usando o Terminal padrão, provavelmente irá usar: https://draculatheme.com/terminal/
 
+Se você estiver no Linux com uma distribuição que usa Gnome, vai utilizar: https://github.com/dracula/gnome-terminal
+
 ## Tema Spaceship
 
 Agora vamos instalar o tema Spaceship que vai modificar um pouco as informações que são exibidas no terminal, com ele podemos mostrar a versão do Node atual, do Docker, etc.
 
 https://github.com/spaceship-prompt/spaceship-prompt
 
+## Instalando Spaceship
+
+Vamos começar clonando o repositório do Spaceship em nossa pasta de themes do Oh My Zsh (é necessário ter instalado o Git pra isso):
+
+```
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+```
+Agora vamos criar um link simbólico para o arquivo do tema do Spaceship na pasta dos temas do Oh My Zsh:
+```
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
+Agora dentro do arquivo ~/.zshrc vamos alterar a variável ZSH_THEME ficando dessa forma:
+```
+ZSH_THEME="spaceship"
+```
 ## Instalando FiraCode
 
 Antes de iniciar a configuração do Spaceship precisamos instalar a fonte Fira Code que possui diversos ícones dos quais são utilizados nesse tema. Baixe o zip da última versão da fonte disponível aqui: https://github.com/tonsky/FiraCode
 
 Descompacte o arquivo baixado e na pasta TTF copie os arquivos de fonte para as fontes do seu sistema (cada sistema operacional possui uma forma de fazer isso).
-
-Depois disso será necessário configurar seu terminal com essa fonte, abaixo mostro uma imagem de como configurei no Mac:
