@@ -143,6 +143,6 @@ if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
   SPACESHIP_GIT_BRANCH_SHOW=false
 fi
 
-
-# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home
+
+source /Users/hugo/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
