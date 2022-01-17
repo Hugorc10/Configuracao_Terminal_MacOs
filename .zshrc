@@ -122,7 +122,6 @@ SPACESHIP_PROMPT_ORDER=(
   char          # Prompt character
 )
 
-
 # USER
 SPACESHIP_USER_SHOW=always
 SPACESHIP_USER_COLOR=cyan
@@ -136,6 +135,8 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="⮕"
 SPACESHIP_CHAR_SUFFIX=" "
 
+zstyle ':omz:update' mode reminder
+
 # Simplify prompt if we're using Hyper
 if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
   SPACESHIP_PROMPT_SEPARATE_LINE=false
@@ -145,4 +146,4 @@ fi
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home
 
-source /Users/hugo/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /Users/hugo/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
