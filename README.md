@@ -25,7 +25,7 @@ A partir de agora todas configurações que você quer fazer como adicionar vari
 
 ## Instalando zsh-syntax-highlighting
 
-#### [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+### [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 1. Clone this repository in oh-my-zsh's plugins directory:
 
@@ -43,7 +43,7 @@ A partir de agora todas configurações que você quer fazer como adicionar vari
 
 ## Instalando zsh-autosuggestions
 
-#### Oh My Zsh(https://github.com/robbyrussell/oh-my-zsh)
+### Oh My Zsh(https://github.com/robbyrussell/oh-my-zsh)
 
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
@@ -85,7 +85,7 @@ Agora vamos instalar o tema Spaceship que vai modificar um pouco as informaçõe
 
 https://github.com/spaceship-prompt/spaceship-prompt
 
-#### Instalando Spaceship
+### Instalando Spaceship
 
 Vamos começar clonando o repositório do Spaceship em nossa pasta de themes do Oh My Zsh (é necessário ter instalado o Git pra isso):
 ```bash
