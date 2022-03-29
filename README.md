@@ -23,6 +23,45 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 A partir de agora todas configurações que você quer fazer como adicionar variáveis ambientes ou configurar seu terminal de qualquer forma utilize o arquivo ~/.zshrc e não mais o ~/.bash_profile ou derivados.
 
+## Instalando zsh-syntax-highlighting
+
+#### [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+1. Clone this repository in oh-my-zsh's plugins directory:
+
+    ```zsh
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+
+2. Activate the plugin in `~/.zshrc`:
+
+    ```zsh
+    plugins=( [plugins...] zsh-syntax-highlighting)
+    ```
+
+3. Restart zsh (such as by opening a new instance of your terminal emulator).
+
+## Instalando zsh-autosuggestions
+
+#### Oh My Zsh(https://github.com/robbyrussell/oh-my-zsh)
+
+1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
+
+    ```sh
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
+
+2. Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
+
+    ```sh
+    plugins=( 
+        # other plugins...
+        zsh-autosuggestions
+    )
+    ```
+
+3. Start a new terminal session.
+
 ## Utilizando Dracula
 
 Dracula é um padrão de cores disponível para muitas aplicações de desenvolvimento e hoje utilizo esse esquema em boa parte dos apps em que desenvolvo.
@@ -46,7 +85,7 @@ Agora vamos instalar o tema Spaceship que vai modificar um pouco as informaçõe
 
 https://github.com/spaceship-prompt/spaceship-prompt
 
-## Instalando Spaceship
+#### Instalando Spaceship
 
 Vamos começar clonando o repositório do Spaceship em nossa pasta de themes do Oh My Zsh (é necessário ter instalado o Git pra isso):
 ```bash
