@@ -145,5 +145,3 @@ if [[ "$TERM_PROGRAM" == "Hyper" ]]; then
 fi
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home
-
-# source /Users/hugo/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
