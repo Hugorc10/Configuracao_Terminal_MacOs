@@ -33,7 +33,7 @@ Powerline Font ou Nerd Font (melhor ainda) devem ser instaladas e usadas em seu 
 echo -e "\xee\x82\xa0" #> 
 ```
 
-Antes de iniciar a configuração do Spaceship precisamos instalar a fonte Fira Code que possui diversos ícones dos quais são utilizados nesse tema. Baixe o zip da última versão da fonte: [FiraCode](https://github.com/tonsky/FiraCode).
+Baixe o zip da última versão da fonte Fira Code: [FiraCode](https://github.com/tonsky/FiraCode).
 
 Descompacte o arquivo baixado e na pasta TTF instale os arquivos de fonte para as fontes do seu sistema (cada sistema operacional possui uma forma de fazer isso).
 
