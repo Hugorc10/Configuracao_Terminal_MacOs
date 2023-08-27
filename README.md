@@ -21,7 +21,7 @@ https://github.com/spaceship-prompt/spaceship-prompt
 
 ### Antes de começar, certifique-se de que possui o seguinte instalado:
 
-. Zsh (v5.2 or recent) must be installed. Run the following command to check you version of Zsh:
+. Zsh (v5.2 ou mais recente) deve ser instalado. Execute o seguinte comanndo para verificar a sua versão do Zsh:
 
 ```
 echo $ZSH_VERSION #> 5.8.1
