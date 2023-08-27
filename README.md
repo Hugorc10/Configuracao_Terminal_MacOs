@@ -1,5 +1,6 @@
-# Configuração Terminal
-Terminal com Oh My Zsh, Spaceship, Dracula e mais
+# Configurando Terminal
+Terminal com Oh My Zsh, Spaceship, Dracula e mais.
+
 
 ## Instalando Zsh
 
@@ -11,9 +12,14 @@ zsh --version
 ```
 E receber algo como: zsh x.x (x86_64-apple-darwin20.0)
 
+
 ## Instalando Spaceship
 
-### Antes de começar, certifique-se de que possui o seguinte instalado
+Agora vamos instalar o tema Spaceship que vai modificar um pouco as informações que são exibidas no terminal, com ele podemos mostrar a versão do Node atual, do Docker, etc.
+
+https://github.com/spaceship-prompt/spaceship-prompt
+
+### Antes de começar, certifique-se de que possui o seguinte instalado:
 
 . Zsh (v5.2 or recent) must be installed. Run the following command to check you version of Zsh:
 
@@ -21,27 +27,37 @@ E receber algo como: zsh x.x (x86_64-apple-darwin20.0)
 echo $ZSH_VERSION #> 5.8.1
 ```
 
-. Powerline Font ou Nerd Font (melhor ainda) devem ser instaladas e usadas em seu terminal. Fira Code é uma escolha popular. Para verificar se Powerline Font funciona para você, execute:
+Powerline Font ou Nerd Font (melhor ainda) devem ser instaladas e usadas em seu terminal. Fira Code é uma escolha popular. Para verificar se Powerline Font funciona para você, execute:
 
 ```
 echo -e "\xee\x82\xa0" #> 
 ```
 
+Antes de iniciar a configuração do Spaceship precisamos instalar a fonte Fira Code que possui diversos ícones dos quais são utilizados nesse tema. Baixe o zip da última versão da fonte: [FiraCode](https://github.com/tonsky/FiraCode).
+
+Descompacte o arquivo baixado e na pasta TTF instale os arquivos de fonte para as fontes do seu sistema (cada sistema operacional possui uma forma de fazer isso).
+
+### Instalando
+
 ### Agora que os requisitos foram atendidos, você pode instalar o Spaceship por meio de qualquer uma das seguintes abordagens:
 
-Clone este repositório:
+Clone este repositório (é necessário ter instalado o Git pra isso):
 
-```
+```bash
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ```
 
-Faça um link simbólico para spaceship.zsh-theme ao diretório de temas personalizados oh-my-zsh:
+Agora vamos criar um link simbólico para o arquivo do tema do Spaceship na pasta dos temas do Oh My Zsh:
 
-```
+```bash
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-Defina ZSH_THEME="spaceship" em seu .zshrc.
+Agora dentro do arquivo `~/.zshrc` vamos alterar a variável ZSH_THEME ficando dessa forma:
+```
+ZSH_THEME="spaceship"
+```
+
 
 ## Instalando Oh My Zsh
 
@@ -94,6 +110,7 @@ A partir de agora todas configurações que você quer fazer como adicionar vari
 
 3. Start a new terminal session.
 
+
 ## Utilizando Dracula
 
 Dracula é um padrão de cores disponível para muitas aplicações de desenvolvimento e hoje utilizo esse esquema em boa parte dos apps em que desenvolvo.
@@ -110,29 +127,3 @@ Se você estiver no Linux com uma distribuição que usa Gnome, vai utilizar: ht
 3. Click Import...
 4. Select the Dracula.terminal file
 5. Click Default
-
-## Tema Spaceship
-
-Agora vamos instalar o tema Spaceship que vai modificar um pouco as informações que são exibidas no terminal, com ele podemos mostrar a versão do Node atual, do Docker, etc.
-
-https://github.com/spaceship-prompt/spaceship-prompt
-
-### Instalando Spaceship
-
-Vamos começar clonando o repositório do Spaceship em nossa pasta de themes do Oh My Zsh (é necessário ter instalado o Git pra isso):
-```bash
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-```
-Agora vamos criar um link simbólico para o arquivo do tema do Spaceship na pasta dos temas do Oh My Zsh:
-```bash
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
-Agora dentro do arquivo `~/.zshrc` vamos alterar a variável ZSH_THEME ficando dessa forma:
-```
-ZSH_THEME="spaceship"
-```
-## Instalando FiraCode
-
-Antes de iniciar a configuração do Spaceship precisamos instalar a fonte Fira Code que possui diversos ícones dos quais são utilizados nesse tema. Baixe o zip da última versão da fonte: [FiraCode](https://github.com/tonsky/FiraCode).
-
-Descompacte o arquivo baixado e na pasta TTF instale os arquivos de fonte para as fontes do seu sistema (cada sistema operacional possui uma forma de fazer isso).
