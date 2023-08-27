@@ -11,6 +11,38 @@ zsh --version
 ```
 E receber algo como: zsh x.x (x86_64-apple-darwin20.0)
 
+## Instalando Spaceship
+
+### Antes de começar, certifique-se de que possui o seguinte instalado
+
+. Zsh (v5.2 or recent) must be installed. Run the following command to check you version of Zsh:
+
+```
+echo $ZSH_VERSION #> 5.8.1
+```
+
+. Powerline Font ou Nerd Font (melhor ainda) devem ser instaladas e usadas em seu terminal. Fira Code é uma escolha popular. Para verificar se Powerline Font funciona para você, execute:
+
+```
+echo -e "\xee\x82\xa0" #> 
+```
+
+### Agora que os requisitos foram atendidos, você pode instalar o Spaceship por meio de qualquer uma das seguintes abordagens:
+
+Clone este repositório:
+
+```
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+```
+
+Faça um link simbólico para spaceship.zsh-theme ao diretório de temas personalizados oh-my-zsh:
+
+```
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
+
+Defina ZSH_THEME="spaceship" em seu .zshrc.
+
 ## Instalando Oh My Zsh
 
 Site do Oh My Zsh: <i>https://ohmyz.sh/#install</i>
