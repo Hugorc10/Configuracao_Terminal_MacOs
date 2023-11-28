@@ -73,7 +73,7 @@ A partir de agora todas configurações que você quer fazer como adicionar vari
 
 ## Instalando zsh-syntax-highlighting
 
-### [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 1. Clone this repository in oh-my-zsh's plugins directory:
 
