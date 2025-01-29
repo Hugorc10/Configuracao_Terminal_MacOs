@@ -91,7 +91,7 @@ A partir de agora todas configurações que você quer fazer como adicionar vari
 
 ## Instalando zsh-autosuggestions
 
-### zsh-autosuggestions([https://github.com/robbyrussell/oh-my-zsh](https://github.com/zsh-users/zsh-autosuggestions)
+### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
